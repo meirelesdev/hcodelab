@@ -1,14 +1,27 @@
 {
-  "name": "live1",
+  "name": "next2505",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeto HcodeLab Web Professional Next.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev -p 3200",
+    "buld":"next build",
+    "start":"next start"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "firebase-tools": "^8.4.0"
+  "author": "Daniel Meireles",
+  "license": "MIT",
+  "keywords": [
+    "hcode",
+    "javascript",
+    "react",
+    "nextjs",
+    "nodejs",
+    "adonisjs",
+    "mysql"
+  ],
+  "devDependencies": {
+    "next": "^9.4.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
