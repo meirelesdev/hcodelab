@@ -6,7 +6,7 @@ export default function Index() {
             <Head>
                 
                 <title>Ferrari</title>
-                <link type="text/css" href="css/index.css" rel="stylesheet" />
+                
             </Head>            
                 <header id="header">
                     <div id="overlay" data-close="menu"></div>
@@ -28,7 +28,7 @@ export default function Index() {
                             <path id="Caminho_216" data-name="Caminho 216" d="M3,18H29V16H3Zm0-5H29V11H3ZM3,6V8H29V6Z" transform="translate(0 4)"/>
                         </svg>
                     </button>
-                    <nav class="menu">
+                    <nav className="menu">
                         <div>
                             <button type="button" id="btn-close" data-close="menu">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -54,14 +54,14 @@ export default function Index() {
                                 <li><a href="/contact.html">Contato</a></li>
                             </ul>
                         </div>
-                        <a href="register.html" class="btn-register">
+                        <a href="register.html" className="btn-register">
                             Registre-se / Login
                         </a>
                     </nav>
                 </header>
                 <main id="home">
                     
-                    <hr class="italy" />
+                    <hr className="italy" />
 
                     <header>
                         
@@ -70,7 +70,7 @@ export default function Index() {
 
                     </header>
 
-                    <section class="gallery">
+                    <section className="gallery">
 
                         <figure>
                             <img src="/images/photos/espostivas-amarela-375x250.jpg" alt="Ferrari Amarela"/>	
@@ -98,26 +98,26 @@ export default function Index() {
 
                     </section>
 
-                    <section class="inspiration">
+                    <section className="inspiration">
 
                         <div></div>
 
-                        <div class="text">
+                        <div className="text">
                             <h2>Inspirando<span>Gerações</span></h2>
                             <hr />
                             <p>Assertively iterate enterprise-wide portals through synergistic products. Efficiently build adaptive schema…</p>
-                            <p class="complete">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab itaque nesciunt sapiente optio nobis atque veritatis rem aut ea expedita, reprehenderit fugit reiciendis, minus quod obcaecati inventore at placeat provident!</p>
+                            <p className="complete">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab itaque nesciunt sapiente optio nobis atque veritatis rem aut ea expedita, reprehenderit fugit reiciendis, minus quod obcaecati inventore at placeat provident!</p>
                         </div>
 
-                        <div class="car animated">
-                            <div class="wheel"></div>
+                        <div className="car animated">
+                            <div className="wheel"></div>
                         </div>
 
                     </section>
 
-                    <section class="know">
+                    <section className="know">
 
-                        <div class="know-1">
+                        <div className="know-1">
                             <h1>Conheça a Máquina</h1>
                             <p>Assertively iterate enterprise-wide portals through synergistic products. Efficiently build adaptive schemas after transparent quality vectors. Phosfluorescently optimize competitive resources after extensive convergence. Rapidiously optimize high-quality meta-services via distributed architectures. Credibly deliver 24/365.</p>
                             <a href="/gallery.html">Detalhes</a>
@@ -125,7 +125,7 @@ export default function Index() {
 
                         <img src="/images/top-view.jpg" alt="Ferrari Top View" />
 
-                        <div class="know-2">
+                        <div className="know-2">
                             
                             <dl>
                                 <dt>Motorização</dt>
@@ -139,24 +139,25 @@ export default function Index() {
                             </dl>
                         </div>
                     </section>
+
                 </main>
                 <footer id="footer">
                     <button type="button">
                         <img src="images/icon-arrow-up.svg" alt="up" />
                     </button>
-                    <div class="columns">
+                    <div className="columns">
                         <div>
-                            <ul class="links">
-                                <li class="title">Links</li>
+                            <ul className="links">
+                                <li className="title">Links</li>
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/our-history.html">Nossa História</a></li>
                                 <li><a href="/gallery.html">Galeria</a></li>
                                 <li><a href="/contact.html">Contato</a></li>
                             </ul>
                             <ul>
-                                <li class="title">Contato</li>
+                                <li className="title">Contato</li>
                                 <li>E-mail: support@ferrari.it</li>
-                                <li class="social">
+                                <li className="social">
                                     <a href="#"><img src="images/facebook.svg" alt="Facebook"/></a>
                                     <a href="#"><img src="images/twitter.svg" alt="Twitter"/></a>
                                     <a href="#"><img src="images/youtube.svg" alt="YouTube"/></a>
@@ -164,7 +165,7 @@ export default function Index() {
                                 </li>
                             </ul>
                         </div>
-                        <a href="/"><img src="images/ferrari-footer.svg" alt="Logo" class="logo" /></a>
+                        <a href="/"><img src="images/ferrari-footer.svg" alt="Logo" className="logo" /></a>
                     </div>
                     <p>2020 © Hcode. All rights reserved.</p>
                 </footer>
