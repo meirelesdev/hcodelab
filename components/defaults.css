@@ -1,3 +1,6 @@
+#__next {
+    flex-direction: column;
+}
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -27,31 +30,6 @@ hr.italy {
 
 main {
     min-height: calc(100vh - 468px);
-}
-
-.page {
-    flex-direction: column;
-}
-.page .page-header {
-    width: 100%;
-    flex-direction: column;
-}
-.page header {
-    height: 210px;
-    width: 100%;
-    background-size: cover;
-    filter: brightness(0.5);
-    flex-direction: column;
-    justify-content: flex-end;
-    color: var(--white);
-    padding: 1em;
-}
-
-.page header ul,
-.page header li, 
-.page header h1 {
-    margin: 0;
-    padding: 0;
 }
 
 form {
@@ -164,7 +142,7 @@ a:hover {
     .page .page-header {
         width: 100%;
         flex-direction: column-reverse;
-        height: 18px;
+        min-height: 18px;
     }
     .page header  {
         filter: none;
