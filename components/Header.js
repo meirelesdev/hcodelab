@@ -7,7 +7,7 @@ export default function Header(){
         
         <header id={styles.header}>
                 <div id={ styles.overlay} data-close="menu"></div>
-                <a href="/"><img src="images/logo.svg" id="logo" alt="Logo" /></a>
+                <a href="/"><img src="images/logo.svg" id={styles.logo} alt="Logo" /></a>
                 <button type="button" id={ styles['btn-open']}>
                     <svg id="menu-black-18dp" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                         <style jsx>{`
@@ -49,7 +49,7 @@ export default function Header(){
                             <li><a href="/contact">Contato</a></li>
                         </ul>
                     </div>
-                    <a href="register.html" className={ styles['btn-register']}>
+                    <a href="/register" className={ styles['btn-register']}>
                         Registre-se / Login
                     </a>
                 </nav>

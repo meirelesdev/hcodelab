@@ -10,7 +10,7 @@ export default function Gallery(){
         <>
             <Header />
             <main id={ styles.gallery} className={styles.page}>
-                    <hr className="italy" />
+            <hr className="italy" />
                 <div className={styles['page-header']}>
                     <header>
                         <h1>Galeria</h1>

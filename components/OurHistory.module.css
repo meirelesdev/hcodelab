@@ -109,6 +109,7 @@
     .page header {
         height: 20vw;
         min-height: 300px;
+        margin-top: -150px;
     }
     #our-history.page header {
         background-image: url('/images/header-our-history@2x.png');
@@ -116,7 +117,7 @@
 }
 
 @media (min-width: 992px) {
-    
+        
     .page header  {
         filter: none;
         align-items: flex-end;
@@ -165,6 +166,7 @@
 @media (min-width: 1200px) {
     #our-history.page header {
         background-position: 0px -30vw;
+        margin-top:  -150px;
     }
 }
 

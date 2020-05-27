@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Projeto HcodeLab Web Professional Next.JS",
   "main": "index.js",
-  "scripts": { 
-    "dev":"next dev -p 3200",
-    "build":"next build",
-    "start":"next start"
+  "scripts": {
+    "dev": "next dev -p 3200",
+    "build": "next build",
+    "start": "next start"
   },
   "keywords": [
     "hcode",
@@ -17,7 +17,7 @@
     "adonisjs",
     "mysql"
   ],
-  "author": "Glaucio Daniel",
+  "author": "Daniel Meireles",
   "license": "MIT",
   "devDependencies": {
     "next": "^9.4.2",

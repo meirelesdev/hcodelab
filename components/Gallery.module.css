@@ -43,6 +43,7 @@
 @media (min-width: 576px) {
     .page header {
         height: 20vw;
+        margin-top: -80px;
         min-height: 300px;
     }
     #gallery.page header {
@@ -66,15 +67,16 @@
     #gallery.page header {
         background-image: url('/images/header-gallery@3x.png');
         background-position: 0px -24vw;
+        margin-top: -150px;
     }
     #gallery.page .photos {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
-        margin-top: 4px;
+        justify-content: center;
+        
     }
     #gallery.page .photos img {
         width: 33vw;
-        margin-bottom: 4px;
+        
     }
 }
