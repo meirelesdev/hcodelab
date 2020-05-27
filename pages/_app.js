@@ -5,6 +5,5 @@ export default function Index({ Component, pageProps}){
         <>
             <Component {...pageProps} />
         </>
-
     )
 }

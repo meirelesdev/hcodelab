@@ -4,17 +4,15 @@ import styles from '../components/Contact.module.css'
 
 export default function Contact(){
     return (
-
         <>
-            <Header />
+        <Header />
             <main id={styles.contact} className={styles.page}>
             <hr className="italy" />
                 <div className={styles['page-header']}>
                     <header>
                         <h1><span className={styles['show-desktop']}>Fale Conosco</span><span className={styles['hide-desktop']}>Contato</span></h1>
                     </header>
-                </div>
-                    
+                </div>                    
                 <section>
                     <form className={styles.from} >
                         <div className={styles.fields}>
