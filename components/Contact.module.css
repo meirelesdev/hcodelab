@@ -184,7 +184,7 @@ a:hover {
 }
 
 @media (min-width: 992px) {
-    .page header  {
+    .page header {
         filter: none;
         align-items: flex-end;
     }

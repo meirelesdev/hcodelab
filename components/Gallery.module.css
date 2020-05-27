@@ -1,4 +1,3 @@
-
 .page {
     flex-direction: column;
 }
@@ -27,7 +26,6 @@
 #__next, #gallery {
     flex-direction: column;
 }
-
 #gallery.page header {
     background-image: url('/images/header-gallery.png');
 }
