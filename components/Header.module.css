@@ -19,18 +19,30 @@
     flex-direction: column;
     justify-content: space-between;
 }
+#header .menu.open-menu{
+    right: 0;
+}
 
-#header .menu .btn-register {
+#header .menu .btn-register,
+#header .menu .btn-login {
     background-color: var(--green);
     color: var(--white);
-    margin: 1em;
+    margin: 0.8em;
     border-radius: 6px;
     justify-content: center;
-    font-size: 1.1em;
+    font-size: 0.8em;
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 1em 0;
+    padding: 0.8em 0;
+}
+#header .menu .btn-register{
+    
+    margin-bottom: 0px;
+}
+#header .menu .btn-login {
+    margin-top: 10px;
+    margin-bottom: 500px;
 }
 
 #header .menu ul {
@@ -63,6 +75,10 @@
 #btn-open, #btn-close {
     position: absolute;
     right: 0;
+
+}
+#header #btn-close{
+    display: none;    
 }
 
 #header #logo {
@@ -92,6 +108,7 @@
     display: flex;
 }
 
+
 .open-menu #header .menu {
     right: 0px;
 }
@@ -100,7 +117,11 @@
     left: initial;
     right: 87px;
 }
-
+#header button#btn-close.mostrar {
+    display: block;
+    position: fixed;
+    z-index: 20;
+}
 @media (min-width: 1200px) {
     #header {
         height: 100px;
@@ -143,10 +164,12 @@
     #header .menu ul li a:hover {
         color: var(--black);
     }
-    #header .menu .btn-register {
-        min-width: 276px;
-        margin: 1.55em;
+    #header .menu .btn-register,
+    #header .menu .btn-login {
+        min-width: 100px;
+        margin: 2em;
     }
+   
 }
 
 @media (min-width: 1200px) {

@@ -1,8 +1,33 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import styles from '../components/Contact.module.css'
+import React, { useState } from 'react'
+import axios from 'axios'
+
 
 export default function Contact(){
+    
+    const [values, setValues ] = useState( {email: '', name:'', message:''} )
+
+    const handleFormSubmit = e => {
+        e.preventDefault()
+
+        axios.post('http://localhost:3333/admin/contacts/add', values).then(
+            (res)=>{
+                alert(`Olá ${res.data.name}, Sua mensagem foi enviada com Sucesso!`)
+                window.location.href=('/')
+            }
+        ).catch(err => {
+            console.log('Deu ruim', err.message)
+        })
+    }
+
+    const handleInputChange = e => {
+        const { name, value }= e.target
+        setValues({...values, [name]:value})
+        console.log(name + ':', value)
+    }
+
     return (
         <>
         <Header />
@@ -14,20 +39,20 @@ export default function Contact(){
                     </header>
                 </div>                    
                 <section>
-                    <form className={styles.from} >
+                    <form className={styles.from} onSubmit={handleFormSubmit} >
                         <div className={styles.fields}>
                             <div className={styles.field}>
-                                <input type="text" name="name" id="name" />
-                                <label for="name">Nome Completo</label>
+                                <input onChange={handleInputChange} onFocus={handleInputChange} type="text" name="name" id="name" />
+                                <label htmlFor="name">Nome Completo</label>
                             </div>
                             <div className={styles.field}>
-                                <input type="email" name="email" id="email" />
-                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email" onChange={handleInputChange} onFocus={handleInputChange}  />
+                                <label htmlFor="email">E-mail</label>
                             </div>
                         </div>
                         <div className={styles.field}>
-                            <textarea name="message" id="message"></textarea>
-                            <label for="message">Mensagem</label>
+                            <textarea name="message" id="message" onChange={handleInputChange} onFocus={handleInputChange} ></textarea>
+                            <label htmlFor="message">Mensagem</label>
                         </div>
                         <button type="submit">Enviar</button>
                     </form>

@@ -8,3 +8,29 @@ logotipo ajustar
 altura do banner = deve ficar igual gallery
 
 fazer register.js e login.js
+
+
+Front-End
+    - SSR (Server Side Rendering) - (React renderizado no lado do servidor)
+    - HTML, CSS e JavaScript
+    - requisições assíncronas, formulários
+            - Origem da requisição
+            - Destino da requisição
+            - Corpo da mensagem
+            - Método da requisição
+            - StatusCode - 200 OK, 206 streaming - 404, 401 Não encontrado - 501 Erro interno
+            - Resposta
+        - XHR - XMLHttpRequest - Ajax (Assincronous JavaScript and XML)
+        - Promises (Promessas - Intenção)
+            - then (caso sucesso)
+            - catch (caso erro)
+        - Async/Await
+        - Fetch API
+        - axios - Lib
+Back-End
+
+index: Listar registros
+show: Exibir registro
+store: Criar um registro
+update: Alterar registro
+destroy: Remover registro

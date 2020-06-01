@@ -1,4 +1,5 @@
 import styles from '../components/Footer.module.css'
+import Link from 'next/link'
 
 export default function Footer(){
     return(
@@ -11,10 +12,26 @@ export default function Footer(){
                     <div>
                         <ul className={ styles.links}>
                             <li className={ styles.titles}>Links</li>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/our-history">Nossa História</a></li>
-                            <li><a href="/gallery">Galeria</a></li>
-                            <li><a href="/contact">Contato</a></li>
+                            <li>
+                                <Link href="/">
+                                    <a href="/">Home</a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/our-history">
+                                    <a alt="">Nossa História</a>
+                                </Link>
+                            </li>
+                            <li>
+                            <Link href="/gallery">
+                                <a alt="Ver nossa galeria">Galeria</a>
+                            </Link>
+                            </li>
+                            <li>
+                            <Link href="/contact">
+                                <a alt="Entrar em contato">Contato</a>
+                            </Link>
+                            </li>
                         </ul>
                         <ul>
                             <li className={ styles.title }>Contato</li>
@@ -27,7 +44,9 @@ export default function Footer(){
                             </li>
                         </ul>
                     </div>
-                    <a href="/"><img src="images/ferrari-footer.svg" alt="Logo" className={ styles.logo} /></a>
+                    <Link href="/">
+                        <a alt="Ir para Home"><img src="images/ferrari-footer.svg" alt="Logo" className={ styles.logo} /></a>
+                    </Link>
                 </div>
                 <p>2020 © Hcode. All rights reserved.</p>
             </footer>

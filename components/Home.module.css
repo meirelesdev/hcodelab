@@ -156,8 +156,7 @@
     }
     #home header {
         height: 100vh;
-        max-height: 100%;
-        background-size: cover;
+        max-height: initial;
         background-image: url('/images/photos/sf90_stradale.jpg@2x.png');
     }
     #home .inspiration {

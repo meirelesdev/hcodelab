@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../components/Header'
+import Link from 'next/link'
 import Footer from '../components/Footer'
 import styles from '../components/Home.module.css'
 
@@ -14,7 +15,9 @@ export default function Index(){
                 <hr className="italy" />
                 <header>                    
                     <h1>SF90 Stradale</h1>
-                    <a href="/galeria.html">Detalhes</a>
+                    <Link href="/gallery">
+                        <a alt="Galeria">Detalhes</a>
+                    </Link>
                 </header>
                 <section className={ styles.gallery}>
                     <figure>
@@ -55,7 +58,9 @@ export default function Index(){
                     <div className={styles['know-1']}>
                         <h1>Conheça a Máquina</h1>
                         <p>Assertively iterate enterprise-wide portals through synergistic products. Efficiently build adaptive schemas after transparent quality vectors. Phosfluorescently optimize competitive resources after extensive convergence. Rapidiously optimize high-quality meta-services via distributed architectures. Credibly deliver 24/365.</p>
-                        <a href="/gallery.html">Detalhes</a>
+                        <Link href="/gallery">
+                            <a alt="Galeria">Detalhes</a>
+                        </Link>
                     </div>
                     <img src="/images/top-view.jpg" alt="Ferrari Top View" />
                     <div className={ styles['know-2']}>                        
