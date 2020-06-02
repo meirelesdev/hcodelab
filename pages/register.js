@@ -14,15 +14,14 @@ export default function Register() {
     const handleInputChange = e => {
         const { name, value }= e.target
         setValues({...values, [name]:value})
-        console.log(name, value)
-
     }
 
     const handleFormSubmit = e => {
         e.preventDefault()
         
-        axios.post(`https://hcodelab-adonis.herokuapp/auths`, values).then( res => {
-            console.log(res)
+        axios.post(`https://hcodelab-adonis.herokuapp/auths`, values)
+            .then( res => {
+            
             alert(`Olá ${res.data.name} seus dados foram cadastrados ID: ${res.data.id}`)
             window.location.href=("/login")
             
