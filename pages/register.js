@@ -21,7 +21,7 @@ export default function Register() {
     const handleFormSubmit = e => {
         e.preventDefault()
         
-        axios.post(`http://localhost:3333/users`, values).then( res => {
+        axios.post(`https://hcodelab-adonis.herokuapp/auths`, values).then( res => {
             console.log(res)
             alert(`Olá ${res.data.name} seus dados foram cadastrados ID: ${res.data.id}`)
             window.location.href=("/login")
