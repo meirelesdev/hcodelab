@@ -22,7 +22,7 @@ export default function Login() {
 
     const handleFormSubmit = e => {
         e.preventDefault()
-        axios.post('https://hcodelab-adonis.herokuapp/auths', values)
+        axios.post('https://hcodelab-adonis.herokuapp.com/auths', values)
         .then(
             (res)=>{
                 const tokenData = res.data.token
@@ -32,7 +32,7 @@ export default function Login() {
 
             }
         ).catch(err => {
-            console.log('Deu ruim', err.message)
+            alert('Deu ruim', err.message)
         })
     }
 

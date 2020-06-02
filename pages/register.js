@@ -19,13 +19,13 @@ export default function Register() {
     const handleFormSubmit = e => {
         e.preventDefault()
         
-        axios.post(`https://hcodelab-adonis.herokuapp/auths`, values)
+        axios.post(`https://hcodelab-adonis.herokuapp.com/auths`, values)
             .then( res => {
             
             alert(`Olá ${res.data.name} seus dados foram cadastrados ID: ${res.data.id}`)
             window.location.href=("/login")
             
-        }).catch( err => console.log("Deu ruim", err))
+        }).catch( err => alert("Deu ruim", err))
     }
 
     return (
