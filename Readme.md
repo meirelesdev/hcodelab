@@ -1,11 +1,34 @@
-# Projeto Ferrari
+﻿# Hcodelab
 
-## Desenvolvido Por Hcodelab
+> Projeto principal do curso HcodeLab Web Professional com Next.js. Frontend completo com autenticacao, perfil do usuario e integracao com API propria.
 
-## Implementado em NextJS##
+## Stack
 
+- Next.js
+- Axios
 
-Ola pessoal, este é um projeto desenvolvido no HcodeLab.
+## Prerequisitos
 
-Link do Projeto em Produção
-[Ferrari - Meirelesdev](https://ferrarimeirelesdev.now.sh/) 
+- Node.js v14+
+
+## Como executar
+
+```bash
+# Clone o repositorio
+git clone https://github.com/meirelesdev/hcodelab.git
+cd hcodelab
+
+# Instale as dependencias
+npm install
+
+# Inicie a aplicacao
+npm run dev
+```
+
+## Licenca
+
+Este projeto esta sob a licenca MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+Desenvolvido por [meirelesdev](https://github.com/meirelesdev/hcodelab)
